@@ -1,3 +1,7 @@
+## Link Khoá Học:
+
+[React Level Thực Tập](https://bom.so/dTFXr0)
+
 ## Yêu cầu:
 
 - Sử dụng API từ trang web https://reqres.in/ để tạo websitte.
