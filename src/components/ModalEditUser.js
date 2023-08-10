@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Button, Modal } from "react-bootstrap";
-import { postCreateUser, putUpdateUser } from "../services/UserService";
+import { putUpdateUser } from "../services/UserService";
 import { toast } from "react-toastify";
 
 const ModalEditUser = (props) => {
@@ -31,7 +31,12 @@ const ModalEditUser = (props) => {
 
   return (
     <>
-      <Modal show={show} onHide={handleClose}>
+      <Modal
+        show={show}
+        onHide={handleClose}
+        backdrop="static"
+        keyboard={false}
+      >
         <Modal.Header closeButton>
           <Modal.Title>Edit a user</Modal.Title>
         </Modal.Header>
