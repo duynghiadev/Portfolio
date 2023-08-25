@@ -3,6 +3,7 @@ const Home = () => {
     <>
       <div className="home-container">
         <div className="mr-3">
+          <br />
           Yêu cầu:
           <br />
           Sử dụng API từ trang web https://reqres.in/ để tạo websitte.
