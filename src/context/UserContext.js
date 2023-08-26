@@ -1,12 +1,18 @@
 import { createContext, useState } from "react";
 
 // @function  UserContext
-const UserContext = createContext({ email: "", auth: false });
+const UserContext = createContext({
+  email: "",
+  auth: false,
+});
 
 // @function  UserProvider
 // Create function to provide UserContext
 const UserProvider = ({ children }) => {
-  const [user, setUser] = useState({ email: "", auth: false });
+  const [user, setUser] = useState({
+    email: "",
+    auth: false,
+  });
 
   const loginContext = (email, token) => {
     setUser((user) => ({

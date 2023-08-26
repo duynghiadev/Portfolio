@@ -5,19 +5,11 @@ import NavDropdown from "react-bootstrap/NavDropdown";
 import logoApp from "../assets/images/logo192.png";
 import { NavLink, useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
-import { useContext, useEffect, useState } from "react";
+import { useContext } from "react";
 import { UserContext } from "../context/UserContext";
 
 const Header = (props) => {
   const { logout, user } = useContext(UserContext);
-
-  const [hideHeader, setHideHeader] = useState(false);
-
-  // useEffect(() => {
-  //   if (window.location.pathname === "/login") {
-  //     setHideHeader(true);
-  //   }
-  // }, []);
 
   const navigate = useNavigate();
 
