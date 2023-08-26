@@ -1,4 +1,4 @@
-import { useContext, useEffect, useState } from "react";
+import { useContext, useState } from "react";
 import { toast } from "react-toastify";
 import { loginApi } from "../services/UserService";
 import { useNavigate } from "react-router-dom";
@@ -13,13 +13,6 @@ const Login = () => {
   const [isShowPassword, setIsShowPassword] = useState(false);
 
   const [loadingAPI, setLoadingAPI] = useState(false);
-
-  // useEffect(() => {
-  //   let token = localStorage.getItem("token");
-  //   if (token) {
-  //     navigate("/");
-  //   }
-  // }, [navigate]);
 
   const handleLogin = async () => {
     if (!email || !password) {
